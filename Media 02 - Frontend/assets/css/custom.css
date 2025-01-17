@@ -1,0 +1,9 @@
+.wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100dvh;
+}
+
+.card-login {
+    min-width: 500px;
+}

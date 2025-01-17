@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiPanku</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/custom.css">
+</head>
+
+<body>
+    <div class="root">
+        <div class="wrapper">
+            <header class="bg-primary py-3">
+                <div class="d-flex align-items-center justify-content-between container">
+                    <div class="d-flex gap-3 align-items-end">
+                        <h3 class="m-0 text-white">SiPanku</h3>
+                        <a class="text-white" href="/transactions/index.html">Transaksi</a>
+                        <a class="text-white" href="/book/index.html">Buku</a>
+                        <a class="text-white" href="/borrowers/index.html">Peminjam</a>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <span class="text-white">Nama Staff</span>
+                        <a href="/index.html" class="text-white">Logout</a>
+                    </div>
+                </div>
+            </header>
+
+            <main class="container py-5">
+                <div class="d-flex justify-content-between align-items-end mb-2">
+                    <h1 class="m-0">Tambah Transaksi</h1>
+                    <a href="/transactions/index.html">kembali</a>
+                </div>
+                <form class="card">
+                    <div class="card-body">
+                        <div class="mb-3 form-group">
+                            <label for="borrower_member_id" class="form-label">Peminjam</label>
+                            <select name="borrower_member_id" id="borrower_member_id" class="form-select">
+                                <option value="">-- pilih peminjam --</option>
+                                <option value="2024010001">Peminjam 1 | 2024010001</option>
+                                <option value="2024010002">Peminjam 2 | 2024010002</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 form-group">
+                            <label for="book_id" class="form-label">Buku</label>
+                            <select name="book_id" id="book_id" class="form-select">
+                                <option value="">-- pilih buku --</option>
+                                <option value="1">Buku 1 | Nama Author | 2024 | Stok : 1</option>
+                                <option value="2">Buku 2 | Nama Author | 2024 | Stok : 9</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="card-footer justify-content-end d-flex">
+                        <button class="btn btn-primary">Tambah</button>
+                    </div>
+                </form>
+            </main>
+
+            <footer class="bg-secondary py-3">
+                <div class="container text-center text-white">
+                    &copy; copyright 2025 - all rights reserved
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="./assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
